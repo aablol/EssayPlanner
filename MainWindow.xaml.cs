@@ -32,7 +32,10 @@ namespace EssayPlanner
 
             if(pass == "debate")
             {
-                MessageBox.Show("Welcome " + user);
+                
+                Intro dashboard = new Intro();
+                dashboard.Show();
+                dashboard.user(user);
             }
             else
             {

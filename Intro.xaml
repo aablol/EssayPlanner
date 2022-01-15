@@ -1,0 +1,17 @@
+﻿<Window x:Class="EssayPlanner.Intro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EssayPlanner"
+        mc:Ignorable="d"
+        Title="Intro" Height="274" Width="392" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,45">
+        <Button x:Name="Add_Colleges" Content="Add Colleges and start working on new essays." HorizontalAlignment="Center" VerticalAlignment="Top" Width="260" Margin="0,44,0,0" Click="Add_Colleges_Click"/>
+        <Button x:Name="CommonApps" Content="CommonApps" HorizontalAlignment="Center" VerticalAlignment="Top" Width="260" Margin="0,69,0,0" Click="CommonApps_Click" />
+        <Button x:Name="ApplyTexas" Content="ApplyTexas" HorizontalAlignment="Center" VerticalAlignment="Top" Width="260" Margin="0,94,0,0" Click="ApplyTexas_Click"/>
+        <Button x:Name="ContinueWork" Content="Continue work on existing essays." HorizontalAlignment="Center" VerticalAlignment="Top" Width="260" Margin="0,119,0,0" Click="ContinueWork_Click"/>
+        <TextBlock x:Name="Label2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Welcome to the program!" VerticalAlignment="Top" Width="215"/>
+
+    </Grid>
+</Window>

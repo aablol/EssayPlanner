@@ -23,5 +23,15 @@ namespace EssayPlanner
         {
             InitializeComponent();
         }
+
+        private void addColleges_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Done_Click(object sender, RoutedEventArgs e)
+        {
+        
+        }
     }
 }

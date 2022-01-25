@@ -10,7 +10,7 @@
         <Button x:Name="Done" Content="Done" HorizontalAlignment="Left" Margin="167,128,0,0" VerticalAlignment="Top" Width="70" Click="Done_Click"/>
         <Button x:Name="addColleges" Content="Add Colleges" HorizontalAlignment="Left" Margin="58,128,0,0" VerticalAlignment="Top" Click="addColleges_Click"/>
         <Label Content="Add Colleges" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top"/>
-        <TextBox Margin="136,48,20,0" TextWrapping="Wrap" Text="Ex. Stanford" VerticalAlignment="Top"/>
+        <TextBox x:Name="College_Box" Margin="136,48,20,0" TextWrapping="Wrap" Text="Ex. Stanford" VerticalAlignment="Top"/>
         <Label Content="College Name" HorizontalAlignment="Left" Margin="46,43,0,0" VerticalAlignment="Top"/>
         <Label Content="How many prompts?" HorizontalAlignment="Left" Margin="12,0,0,0" VerticalAlignment="Center"/>
         <DockPanel VerticalAlignment="Top" Margin="136,83,20,0">

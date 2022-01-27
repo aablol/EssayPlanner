@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SetContinueWorkFromAddColleges.Events;
+using SetContinueWorkFromAddColleges.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,29 @@ namespace EssayPlanner
     /// </summary>
     public partial class ContinueWork : Window
     {
+
+        List<CollegesModel> Colleges = new List<CollegesModel>();
+
         public ContinueWork()
         {
             InitializeComponent();
         }
+
+        private void ContinueWork_Load(object sender, EventArgs e)
+        {
+            Colleges = CollegesModel.GetColleges();
+
+            this.PopulateColleges();
+        }
+
+        private void PopulateCustomers()
+        {
+            var colleges = (from c in Colleges select c.College).ToList();
+
+            this.lstColleges.DataSource = colleges;
+
+        }
+
+        private void    
     }
 }

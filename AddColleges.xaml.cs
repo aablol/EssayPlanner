@@ -25,7 +25,7 @@ namespace EssayPlanner
 
         public event CollegesHandler UpdateColleges;
 
-        public List<CollegesModel> Customers;
+        public List<CollegesModel> Colleges;
             
         public AddColleges()
         {
@@ -56,11 +56,24 @@ namespace EssayPlanner
         {
             Colleges.Add(new CollegesModel()
             {
-                Colleges = this.College_Box.Text.Trim()
+                College = this.College_Box.Text.Trim()
             });
 
-            MessageBox.Show("Customer succesfully added!", TitlesModel.MessageBoxTitle,
-                                MessageBoxButtons.OK, Messagebox)
+            MessageBox.Show("College succesfully added!", TitlesModel.MessageBoxTitle,
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private bool PerformValidation()
+        {
+            if (String.IsNullOrEmpty(this.College_Box.Text.Trim()))
+            {
+                MessageBox.Show("A College must be entered!", TitlesModel.MessageBoxTitle,
+                                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.College_Box.Focus();
+                return false;
+            }
+            return true; 
         }
 
     }

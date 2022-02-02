@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="ContinueWork" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="368,234,0,0" TextWrapping="Wrap" Text="ContiueWork" VerticalAlignment="Top"/>
-
+        <Button x:Name="College_1" Content="Button" HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button x:Name="College_2" Content="Button" HorizontalAlignment="Left" Height="37" Margin="10,107,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button x:Name="College_3" Content="Button" HorizontalAlignment="Left" Height="37" Margin="10,217,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button x:Name="College_4" Content="Button" HorizontalAlignment="Left" Height="37" Margin="10,321,0,0" VerticalAlignment="Top" Width="114"/>
     </Grid>
 </Window>
